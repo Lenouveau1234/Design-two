@@ -1,0 +1,119 @@
+/* Start Global Rules  */
+:root{
+    --first-color: #fe667b;
+    --second-color: #012f63;
+    --third-color: #a7bbc3;
+    --fourth-color: #c0c2ce;
+    --white-color: #fff;
+    --thirty-px: 30px;
+}
+/* End Global Rules  */
+
+/* Start Global Rules  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--white-color);
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small devices */
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium devices */
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large devices */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.display-none {
+    display: none;
+}
+.clicked {
+    color: var(--first-color);
+}
+/* End Global Rules  */
+
+/* Start Header  */
+header{
+    padding: 15px;
+    background-color: var(--white-color);
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container img {
+    height: 50px;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+header .container nav ul{
+    display: flex;
+}
+header .container nav ul li{
+    margin-left: 40px;
+}
+header .container nav ul li a{
+    color: var(--second-color);
+    padding: 15px;
+    font-weight: 800;
+}
+header .container nav ul li a:hover{
+    background-color :var(--first-color);
+    color: var(--white-color);
+}
+/* End Header  */
+
+/* Start footer  */
+footer .features{
+    display: flex;
+    justify-content: space-between;
+}
+footer .features div h3{
+    color: var(--second-color);
+}
+footer .features div p{
+    cursor: pointer;
+    padding: 8px 8px 8px 0;
+    font-weight: 600;
+    color: var(--fourth-color);
+}
+footer .features div p:hover{
+    color: var(--first-color);
+}
+/* End footer  */
